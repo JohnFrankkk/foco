@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-0S3vJWv+OUjzBFQOZYUhtDYW+Pj2yciDIxpsK10YPAYjaTO85Qqg/1cag5FLXAZO7Ay"
+        crossorigin="anonymous">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+
+    <div class="background-overlay"></div>
+    <form id="contactForm" action="https://formsubmit.co/joaovictorfranklin0@gmail.com"
+        method="POST" class="form" enctype="multipart/form-data" onsubmit="return submitForm()">
+
+        <h1>Formulário de Contato</h1>
+
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name" placeholder="Nome" required />
+
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="E-mail"
+            required />
+
+        <label for="message">Mensagem</label>
+        <textarea name="message" id="message" placeholder="Mensagem"
+            required></textarea>
+
+        <label for="photo">Foto</label>
+        <input type="file" name="photo" id="photo" accept="image/*" />
+
+        <input type="hidden" name="_captcha" value="false">
+
+        <input
+        type="hidden"
+        name="_next"
+        value="http://127.0.0.1:5500//obrigado.html"/>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Login com Animação</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+      function logar() {
+          window.location.href = "menu/home.html";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="background-video" class="overlay">
+      <video autoplay muted loop>
+        <source src="./imagem/vid.mp4" type="video/mp4">
+      </video>
+
+
+
+      <div contenteditable="true" class="welcome-text">
+        <h2>Wellcome</h2>
+      </div>
+
+
+      <div contenteditable="true" class="foco-text">
+        <h2>FocoFacinante!</h2>
+      </div>
+
+
+      <form class="box" action="login.html" method="post">
+        <h1>Login Usuário!</h1>
+        <input type="text" name placeholder="Login" id="login">
+        <input type="password" name placeholder="Senha" id="senha">
+        <input type="submit" onclick="logar(); return false">
+      </form>
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+    </div>
+  </body>
+</html>

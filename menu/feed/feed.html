@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Efeito Flip</title>
+</head>
+<body>
+
+<div class="content-wrapper">
+
+    <!-- Parágrafo -->
+    <div class="paragraph-box">
+        <h2>Os 3 vencedores do dia!</h2>
+        <p>Confira as 3 fotos selecionadas, enviadas pelos nossos leitores!</p>
+    </div>
+
+    <!-- Seção de imagens flip -->
+    <div class="image-section">
+        <div class="container">
+            <div class="flip">
+                <div class="frente" style="background-image: url('images/flip.jpg')"></div>
+                <div class="tras">
+                    <p>Pedro Silva
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="container2">
+            <div class="flip2">
+                <div class="frente2" style="background-image: url('images/flip2.jfif')"></div>
+                <div class="tras2">
+                    <p>Silvana Fernandes</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="flip3">
+                <div class="frente3" style="background-image: url('images/flip3.jpg')"></div>
+                <div class="tras3">
+                    <p>Juliana Andrade</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="paragraph-box">
+        <h3>Quer ter sua foto aqui?</h3>
+        <p>Nos envie a melhor sua melhor fotografia, pelo formulário abaixo e quem sabe você também não apareça aqui? Boa Sorte!</p>
+    </div>
+
+    <!-- Seção do formulário de contato -->
+    <div class="form-section">
+        <div class="background-overlay"></div>
+
+        <form id="contactForm" action="https://formsubmit.co/joaovictorfranklin0@gmail.com"
+            method="POST" class="form" enctype="multipart/form-data" onsubmit="return submitForm()">
+
+            <h1>Formulário de Contato</h1>
+
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" placeholder="Nome" required />
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="E-mail" required />
+
+            <label for="message">Mensagem</label>
+            <textarea name="message" id="message" placeholder="Mensagem" required></textarea>
+
+            <label for="photo">Foto</label>
+            <input type="file" name="photo" id="photo" accept="image/*" />
+
+            <input type="hidden" name="_captcha" value="false">
+
+            <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500//menu/feed/obg.html"/>
+
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
